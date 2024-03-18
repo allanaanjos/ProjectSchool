@@ -1,0 +1,1 @@
+ng g m pages/users --route pages/users --module app

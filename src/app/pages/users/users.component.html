@@ -1,0 +1,25 @@
+<div class="content mat-elevation-z4">
+  <app-toolbar-title title="Usuário" icon="list">
+    <button mat-icon-button>
+      <mat-icon>share</mat-icon>
+    </button>
+  </app-toolbar-title>
+  <nav mat-tab-nav-bar class="tabs">
+     <a mat-tab-link routerLink="/users/myProfile" routerLinkActive="active-link">
+      <mat-icon>person</mat-icon>
+      Profile
+    </a>
+     <a mat-tab-link routerLink="/users/myconquest" routerLinkActive="active-link">
+      <mat-icon>play_lesson</mat-icon>
+      Conquest
+    </a>
+     <a mat-tab-link routerLink="/users/mydisciplines" routerLinkActive="active-link">
+      <mat-icon>workspace_premium</mat-icon>
+      Disciplines
+    </a>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
