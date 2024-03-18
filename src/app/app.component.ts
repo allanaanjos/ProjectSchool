@@ -1,11 +1,14 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { BreakpointObserver } from "@angular/cdk/layout"
 import { fromEvent, map } from 'rxjs';
+import { MenuItem } from './shared/models/menuItem';
+import { menuItems } from './shared/models/menu';
 
 
 export const SCROLL_CONTAINER = 'mat-sidenav-content';
 export const TEXT_LIMIT = 60;
 export const SHADOW_LIMIT = 100;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,6 +18,8 @@ export class AppComponent implements OnInit {
   public isSmallScreem = false;
   public popText = false;
   public applyShadow = false;
+  public items_menu: MenuItem[] = menuItems;
+
   constructor(private breakPointObservable: BreakpointObserver){}
 
   ngOnInit(): void {

@@ -13,12 +13,12 @@ export const menuItems: MenuItem[] = [
   },
   {
     link: '/teachers',
-    icon: 'fa-person-chelkboard',
+    icon: 'fa-person-chalkboard',
     label: 'Professores',
   },
   {
     link: '/students',
-    icon: 'fa-chelkboard-user',
+    icon: 'fa-chalkboard-user',
     label: 'Estudantes',
   },
   {
