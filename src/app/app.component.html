@@ -41,7 +41,7 @@
 
      <!-- toolbar SubMenu-->
     <mat-toolbar class="toolbar-submenu" color="primary">
-      <div class="toolbar-submenu-top">
+      <mat-toolbar-row class="toolbar-submenu-top">
         <button
          matTooltip="{{sidenav.opened ? 'fechar menu' : 'abrir menu'}}"
          matTooltipPosition="right"
@@ -52,12 +52,12 @@
           {{sidenav.opened ? 'close' : 'menu'}}
          </mat-icon>
         </button>
-      </div>
+      </mat-toolbar-row>
 
       <!--titulo do subMenu-->
-      <div class="toolbar-submenu-title">
+      <mat-toolbar-row class="toolbar-submenu-title">
         <span *ngIf="!popText">{{ menuName }}</span>
-      </div>
+      </mat-toolbar-row>
 
     </mat-toolbar>
 

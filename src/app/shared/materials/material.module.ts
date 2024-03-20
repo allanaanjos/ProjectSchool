@@ -8,6 +8,7 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatMenuModule } from '@angular/material/menu'
 
 
 
@@ -20,7 +21,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatMenuModule
 
   ],
   imports: [
